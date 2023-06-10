@@ -1,0 +1,12 @@
+#include <debug.au3>
+run('calc.exe')
+$hWnd=WinWait("Калькулятор")
+WinActivate($hWnd)
+Send('8{/}0{enter}')
+WinActivate($hWnd)
+Send("^C")
+Local $var=ClipGet()
+ConsoleWrite($var)
+ConsoleWrite(_Assert('$var="Деление на ноль невозможно"'))
+Sleep(1000)
+WinClose("Калькулятор")

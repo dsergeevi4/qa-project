@@ -1,0 +1,1082 @@
+{
+  "id": "ae1de879-538c-4124-82df-6e37156a2f6a",
+  "version": "2.0",
+  "name": "triangle",
+  "url": "https://www.calculator.net/triangle-calculator.html",
+  "tests": [{
+    "id": "a621b811-123e-4940-8eb9-49e39ddfb8a6",
+    "name": "Equilateral Triangle positive",
+    "commands": [{
+      "id": "2e7b88d4-1646-472e-b682-86e67b38e2d3",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.calculator.net/triangle-calculator.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c9b167a9-10d4-4679-86aa-e226c448f7f6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a62879fc-03fd-4e64-a7d3-5a2d14662431",
+      "comment": "",
+      "command": "click",
+      "target": "css=.clearbtn",
+      "targets": [
+        ["css=.clearbtn", "css:finder"],
+        ["xpath=//img[@onclick='clearForm(document.calform);']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td/table/tbody/tr[5]/td/img", "xpath:idRelative"],
+        ["xpath=//td/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "578e539f-40d4-4fe5-bc66-2e804ef7b739",
+      "comment": "",
+      "command": "click",
+      "target": "name=vx",
+      "targets": [
+        ["name=vx", "name"],
+        ["css=tr:nth-child(2) > td:nth-child(1) > .in4char", "css:finder"],
+        ["xpath=//input[@name='vx']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td/table/tbody/tr[2]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6628d241-eaa1-4c1d-9f4d-bea5e12c387f",
+      "comment": "",
+      "command": "type",
+      "target": "name=vx",
+      "targets": [
+        ["name=vx", "name"],
+        ["css=tr:nth-child(2) > td:nth-child(1) > .in4char", "css:finder"],
+        ["xpath=//input[@name='vx']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td/table/tbody/tr[2]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td/input", "xpath:position"]
+      ],
+      "value": "3"
+    }, {
+      "id": "d6b277a8-3b87-480e-87dc-8d6d633ad488",
+      "comment": "",
+      "command": "click",
+      "target": "name=vy",
+      "targets": [
+        ["name=vy", "name"],
+        ["css=td:nth-child(3) > .in4char:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='vy']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td/table/tbody/tr[2]/td[3]/input", "xpath:idRelative"],
+        ["xpath=//td[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ef112a88-a941-4971-b27c-5234a2966096",
+      "comment": "",
+      "command": "type",
+      "target": "name=vy",
+      "targets": [
+        ["name=vy", "name"],
+        ["css=td:nth-child(3) > .in4char:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='vy']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td/table/tbody/tr[2]/td[3]/input", "xpath:idRelative"],
+        ["xpath=//td[3]/input", "xpath:position"]
+      ],
+      "value": "3"
+    }, {
+      "id": "927d9875-5d67-4123-bd3e-923e00bb8ce2",
+      "comment": "",
+      "command": "click",
+      "target": "name=vz",
+      "targets": [
+        ["name=vz", "name"],
+        ["css=td:nth-child(3) > .in4char:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='vz']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td/table/tbody/tr[3]/td[3]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "32ec4d6d-59c2-4ad5-97fd-8943d9752e8e",
+      "comment": "",
+      "command": "type",
+      "target": "name=vz",
+      "targets": [
+        ["name=vz", "name"],
+        ["css=td:nth-child(3) > .in4char:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='vz']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td/table/tbody/tr[3]/td[3]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[3]/input", "xpath:position"]
+      ],
+      "value": "3"
+    }, {
+      "id": "42b10774-72d3-4cf3-af04-736bc0d1adb1",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(5) input",
+      "targets": [
+        ["css=tr:nth-child(5) input", "css:finder"],
+        ["xpath=//input[@value='Calculate']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td/table/tbody/tr[5]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[5]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9d00516-ad83-4fb8-96c8-f7d05ba12ae5",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=td > h3",
+      "targets": [],
+      "value": "Equilateral Triangle"
+    }]
+  }, {
+    "id": "9b295e1e-d1a3-4eb6-a97c-2a6ce7ab4eeb",
+    "name": "Equilateral Triangle negative",
+    "commands": [{
+      "id": "51c2c76e-ff3f-4401-aa63-4e6f0efb67af",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.calculator.net/triangle-calculator.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "85544510-ae1e-4309-916c-82641bee2af1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cd3a0e01-704b-49af-a0ed-20a98344ccd2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.clearbtn",
+      "targets": [
+        ["css=.clearbtn", "css:finder"],
+        ["xpath=//img[@onclick='clearForm(document.calform);']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td/table/tbody/tr[5]/td/img", "xpath:idRelative"],
+        ["xpath=//td/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e97b4cfe-d1f5-4fa6-b6a1-b79b399c4005",
+      "comment": "",
+      "command": "click",
+      "target": "name=vx",
+      "targets": [
+        ["name=vx", "name"],
+        ["css=tr:nth-child(2) > td:nth-child(1) > .in4char", "css:finder"],
+        ["xpath=//input[@name='vx']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td/table/tbody/tr[2]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5065b20c-9c16-4847-9d78-d8825e1220a0",
+      "comment": "",
+      "command": "type",
+      "target": "name=vx",
+      "targets": [
+        ["name=vx", "name"],
+        ["css=tr:nth-child(2) > td:nth-child(1) > .in4char", "css:finder"],
+        ["xpath=//input[@name='vx']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td/table/tbody/tr[2]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td/input", "xpath:position"]
+      ],
+      "value": "4"
+    }, {
+      "id": "9fe11b90-7056-4de3-ad84-87822a84b8d0",
+      "comment": "",
+      "command": "click",
+      "target": "name=vy",
+      "targets": [
+        ["name=vy", "name"],
+        ["css=td:nth-child(3) > .in4char:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='vy']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td/table/tbody/tr[2]/td[3]/input", "xpath:idRelative"],
+        ["xpath=//td[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "07d32199-2adb-4382-9c1b-62df69d7c891",
+      "comment": "",
+      "command": "type",
+      "target": "name=vy",
+      "targets": [
+        ["name=vy", "name"],
+        ["css=td:nth-child(3) > .in4char:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='vy']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td/table/tbody/tr[2]/td[3]/input", "xpath:idRelative"],
+        ["xpath=//td[3]/input", "xpath:position"]
+      ],
+      "value": "4"
+    }, {
+      "id": "70c58d77-4232-4f59-8b51-a53685a5a566",
+      "comment": "",
+      "command": "click",
+      "target": "name=vz",
+      "targets": [
+        ["name=vz", "name"],
+        ["css=td:nth-child(3) > .in4char:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='vz']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td/table/tbody/tr[3]/td[3]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "abfd6352-4ac0-48a9-a447-96614884f5ac",
+      "comment": "",
+      "command": "type",
+      "target": "name=vz",
+      "targets": [
+        ["name=vz", "name"],
+        ["css=td:nth-child(3) > .in4char:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='vz']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td/table/tbody/tr[3]/td[3]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[3]/input", "xpath:position"]
+      ],
+      "value": "7"
+    }, {
+      "id": "1ed4bce3-4d1d-4383-b13c-ee0a1b3871c7",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(5) input",
+      "targets": [
+        ["css=tr:nth-child(5) input", "css:finder"],
+        ["xpath=//input[@value='Calculate']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td/table/tbody/tr[5]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[5]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2538abb-78ba-4276-a837-1746906eda71",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=td > h3",
+      "targets": [],
+      "value": "Equilateral Triangle"
+    }]
+  }, {
+    "id": "559fab26-179f-4793-b70c-29040c4bb112",
+    "name": "Isosceles Triangle positive",
+    "commands": [{
+      "id": "f4213caa-44aa-4cc3-8989-0da17640a4e6",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.calculator.net/triangle-calculator.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b9b7fe97-c254-4187-b47c-1f7e1c0032b6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3f4eb3cf-19a9-4db0-8eec-04734db88237",
+      "comment": "",
+      "command": "click",
+      "target": "css=.clearbtn",
+      "targets": [
+        ["css=.clearbtn", "css:finder"],
+        ["xpath=//img[@onclick='clearForm(document.calform);']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td/table/tbody/tr[5]/td/img", "xpath:idRelative"],
+        ["xpath=//td/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d15b0614-891b-42ac-af07-74ffb0f3b2bd",
+      "comment": "",
+      "command": "click",
+      "target": "name=vx",
+      "targets": [
+        ["name=vx", "name"],
+        ["css=tr:nth-child(2) > td:nth-child(1) > .in4char", "css:finder"],
+        ["xpath=//input[@name='vx']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td/table/tbody/tr[2]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "07fdcb92-50b4-4a08-9819-aa2bfba515ba",
+      "comment": "",
+      "command": "type",
+      "target": "name=vx",
+      "targets": [
+        ["name=vx", "name"],
+        ["css=tr:nth-child(2) > td:nth-child(1) > .in4char", "css:finder"],
+        ["xpath=//input[@name='vx']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td/table/tbody/tr[2]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td/input", "xpath:position"]
+      ],
+      "value": "7"
+    }, {
+      "id": "25ecbe5b-587f-438a-a516-da780a09c396",
+      "comment": "",
+      "command": "click",
+      "target": "name=vy",
+      "targets": [
+        ["name=vy", "name"],
+        ["css=td:nth-child(3) > .in4char:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='vy']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td/table/tbody/tr[2]/td[3]/input", "xpath:idRelative"],
+        ["xpath=//td[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "569a4331-3a6b-452f-9292-6c89fb4118be",
+      "comment": "",
+      "command": "type",
+      "target": "name=vy",
+      "targets": [
+        ["name=vy", "name"],
+        ["css=td:nth-child(3) > .in4char:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='vy']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td/table/tbody/tr[2]/td[3]/input", "xpath:idRelative"],
+        ["xpath=//td[3]/input", "xpath:position"]
+      ],
+      "value": "7"
+    }, {
+      "id": "079a26ec-438f-4f01-a6db-482e44356f2c",
+      "comment": "",
+      "command": "click",
+      "target": "name=vz",
+      "targets": [
+        ["name=vz", "name"],
+        ["css=td:nth-child(3) > .in4char:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='vz']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td/table/tbody/tr[3]/td[3]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7c7605e5-7fb3-4c00-a7ba-20d5a4a3ec03",
+      "comment": "",
+      "command": "type",
+      "target": "name=vz",
+      "targets": [
+        ["name=vz", "name"],
+        ["css=td:nth-child(3) > .in4char:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='vz']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td/table/tbody/tr[3]/td[3]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[3]/input", "xpath:position"]
+      ],
+      "value": "5"
+    }, {
+      "id": "c67e5c52-08dd-49d6-b798-6f92a10b2233",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(5) input",
+      "targets": [
+        ["css=tr:nth-child(5) input", "css:finder"],
+        ["xpath=//input[@value='Calculate']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td/table/tbody/tr[5]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[5]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b4a8317c-2572-4083-a4f6-1dcd1237dc86",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=td > h3",
+      "targets": [],
+      "value": "Acute Isosceles Triangle"
+    }]
+  }, {
+    "id": "eb4433a3-439f-4865-81a9-ca0b3e933eff",
+    "name": "Isosceles Triangle negative",
+    "commands": [{
+      "id": "75a920c6-5e01-4aa3-bbf0-3646e948d501",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.calculator.net/triangle-calculator.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "efe0bd1e-b77d-4fd2-8aee-26e888a78336",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "26d23593-797f-4b52-8996-1afe0d310882",
+      "comment": "",
+      "command": "click",
+      "target": "css=.clearbtn",
+      "targets": [
+        ["css=.clearbtn", "css:finder"],
+        ["xpath=//img[@onclick='clearForm(document.calform);']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td/table/tbody/tr[5]/td/img", "xpath:idRelative"],
+        ["xpath=//td/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff11f515-16c0-4138-b35c-ee585b1e7314",
+      "comment": "",
+      "command": "click",
+      "target": "name=vx",
+      "targets": [
+        ["name=vx", "name"],
+        ["css=tr:nth-child(2) > td:nth-child(1) > .in4char", "css:finder"],
+        ["xpath=//input[@name='vx']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td/table/tbody/tr[2]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a876428-d10b-4e23-95e6-767599f41e83",
+      "comment": "",
+      "command": "type",
+      "target": "name=vx",
+      "targets": [
+        ["name=vx", "name"],
+        ["css=tr:nth-child(2) > td:nth-child(1) > .in4char", "css:finder"],
+        ["xpath=//input[@name='vx']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td/table/tbody/tr[2]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td/input", "xpath:position"]
+      ],
+      "value": "3"
+    }, {
+      "id": "f3b844c5-fb5d-4685-9754-77c0e5253078",
+      "comment": "",
+      "command": "click",
+      "target": "name=vy",
+      "targets": [
+        ["name=vy", "name"],
+        ["css=td:nth-child(3) > .in4char:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='vy']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td/table/tbody/tr[2]/td[3]/input", "xpath:idRelative"],
+        ["xpath=//td[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "95d43d90-3257-4442-9bc9-60627ef74035",
+      "comment": "",
+      "command": "type",
+      "target": "name=vy",
+      "targets": [
+        ["name=vy", "name"],
+        ["css=td:nth-child(3) > .in4char:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='vy']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td/table/tbody/tr[2]/td[3]/input", "xpath:idRelative"],
+        ["xpath=//td[3]/input", "xpath:position"]
+      ],
+      "value": "6"
+    }, {
+      "id": "9bc74bcb-119c-49ee-aeb6-bf42bbe93448",
+      "comment": "",
+      "command": "click",
+      "target": "name=vz",
+      "targets": [
+        ["name=vz", "name"],
+        ["css=td:nth-child(3) > .in4char:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='vz']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td/table/tbody/tr[3]/td[3]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "847a2bcb-c291-4ad4-9cb1-f1d57c96b997",
+      "comment": "",
+      "command": "type",
+      "target": "name=vz",
+      "targets": [
+        ["name=vz", "name"],
+        ["css=td:nth-child(3) > .in4char:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='vz']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td/table/tbody/tr[3]/td[3]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[3]/input", "xpath:position"]
+      ],
+      "value": "5"
+    }, {
+      "id": "2a38ca29-0130-423d-945f-c2856e519304",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(5) input",
+      "targets": [
+        ["css=tr:nth-child(5) input", "css:finder"],
+        ["xpath=//input[@value='Calculate']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td/table/tbody/tr[5]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[5]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c3edada-faf4-4294-8d63-63a024342a89",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=td > h3",
+      "targets": [],
+      "value": "Acute Isosceles Triangle"
+    }]
+  }, {
+    "id": "8e34e368-21af-41bb-a1d2-50883380a820",
+    "name": "Right Scalene Triangle positive",
+    "commands": [{
+      "id": "e43750d2-23a3-4458-a00c-f6fd2218fa7e",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.calculator.net/triangle-calculator.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3155975e-9d8b-400e-adab-12401a1d8370",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "30c27fee-da54-4a96-a69d-1addf3f5945f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.clearbtn",
+      "targets": [
+        ["css=.clearbtn", "css:finder"],
+        ["xpath=//img[@onclick='clearForm(document.calform);']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td/table/tbody/tr[5]/td/img", "xpath:idRelative"],
+        ["xpath=//td/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c1d82da-e16f-4666-baea-86b7879ef089",
+      "comment": "",
+      "command": "click",
+      "target": "name=vx",
+      "targets": [
+        ["name=vx", "name"],
+        ["css=tr:nth-child(2) > td:nth-child(1) > .in4char", "css:finder"],
+        ["xpath=//input[@name='vx']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td/table/tbody/tr[2]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f798e068-e910-4a1c-bd41-8787f2f91c01",
+      "comment": "",
+      "command": "type",
+      "target": "name=vx",
+      "targets": [
+        ["name=vx", "name"],
+        ["css=tr:nth-child(2) > td:nth-child(1) > .in4char", "css:finder"],
+        ["xpath=//input[@name='vx']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td/table/tbody/tr[2]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td/input", "xpath:position"]
+      ],
+      "value": "3"
+    }, {
+      "id": "a202c072-c919-4ddf-b7b1-0aaec34238fd",
+      "comment": "",
+      "command": "click",
+      "target": "name=vy",
+      "targets": [
+        ["name=vy", "name"],
+        ["css=td:nth-child(3) > .in4char:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='vy']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td/table/tbody/tr[2]/td[3]/input", "xpath:idRelative"],
+        ["xpath=//td[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a433347-3fd5-40ec-bf0b-aeda7bef70aa",
+      "comment": "",
+      "command": "type",
+      "target": "name=vy",
+      "targets": [
+        ["name=vy", "name"],
+        ["css=td:nth-child(3) > .in4char:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='vy']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td/table/tbody/tr[2]/td[3]/input", "xpath:idRelative"],
+        ["xpath=//td[3]/input", "xpath:position"]
+      ],
+      "value": "4"
+    }, {
+      "id": "0136f5f0-2489-4fb7-9ad0-23aff1496cef",
+      "comment": "",
+      "command": "click",
+      "target": "name=vz",
+      "targets": [
+        ["name=vz", "name"],
+        ["css=td:nth-child(3) > .in4char:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='vz']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td/table/tbody/tr[3]/td[3]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "891a4f34-88fb-43da-a13f-8b13472a4610",
+      "comment": "",
+      "command": "type",
+      "target": "name=vz",
+      "targets": [
+        ["name=vz", "name"],
+        ["css=td:nth-child(3) > .in4char:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='vz']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td/table/tbody/tr[3]/td[3]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[3]/input", "xpath:position"]
+      ],
+      "value": "5"
+    }, {
+      "id": "733a26c0-d654-4b55-8712-07572f19fd03",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(5) input",
+      "targets": [
+        ["css=tr:nth-child(5) input", "css:finder"],
+        ["xpath=//input[@value='Calculate']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td/table/tbody/tr[5]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[5]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "365242ae-b2bc-432e-875b-c16e23760734",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=td > h3",
+      "targets": [],
+      "value": "Right Scalene Triangle"
+    }]
+  }, {
+    "id": "8629a4c5-accf-4c01-a731-2fcdfdacc74a",
+    "name": "Right Scalene Triangle negative",
+    "commands": [{
+      "id": "c3c4bc93-7e57-4760-ba17-694f976cc99e",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.calculator.net/triangle-calculator.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3158abb1-d7ae-4364-ae96-4ef1a60629e1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9dd4b714-82aa-4103-85a2-eea7a12ffc2f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.clearbtn",
+      "targets": [
+        ["css=.clearbtn", "css:finder"],
+        ["xpath=//img[@onclick='clearForm(document.calform);']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td/table/tbody/tr[5]/td/img", "xpath:idRelative"],
+        ["xpath=//td/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a3a90f37-37d0-41e9-978a-83c39a297692",
+      "comment": "",
+      "command": "click",
+      "target": "name=vx",
+      "targets": [
+        ["name=vx", "name"],
+        ["css=tr:nth-child(2) > td:nth-child(1) > .in4char", "css:finder"],
+        ["xpath=//input[@name='vx']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td/table/tbody/tr[2]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa935f9c-0fa7-4565-9bb5-091a8444c91a",
+      "comment": "",
+      "command": "type",
+      "target": "name=vx",
+      "targets": [
+        ["name=vx", "name"],
+        ["css=tr:nth-child(2) > td:nth-child(1) > .in4char", "css:finder"],
+        ["xpath=//input[@name='vx']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td/table/tbody/tr[2]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td/input", "xpath:position"]
+      ],
+      "value": "7"
+    }, {
+      "id": "5ee252ad-113e-41d0-aa55-039a621db583",
+      "comment": "",
+      "command": "click",
+      "target": "name=vy",
+      "targets": [
+        ["name=vy", "name"],
+        ["css=td:nth-child(3) > .in4char:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='vy']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td/table/tbody/tr[2]/td[3]/input", "xpath:idRelative"],
+        ["xpath=//td[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a024d895-291e-4b09-8a0a-c61beea9da25",
+      "comment": "",
+      "command": "type",
+      "target": "name=vy",
+      "targets": [
+        ["name=vy", "name"],
+        ["css=td:nth-child(3) > .in4char:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='vy']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td/table/tbody/tr[2]/td[3]/input", "xpath:idRelative"],
+        ["xpath=//td[3]/input", "xpath:position"]
+      ],
+      "value": "7"
+    }, {
+      "id": "73f299ab-9ad6-438b-ba5f-2a8c66a307be",
+      "comment": "",
+      "command": "click",
+      "target": "name=vz",
+      "targets": [
+        ["name=vz", "name"],
+        ["css=td:nth-child(3) > .in4char:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='vz']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td/table/tbody/tr[3]/td[3]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3bf660bc-dfbf-41c8-9ec4-609dfc676fe1",
+      "comment": "",
+      "command": "type",
+      "target": "name=vz",
+      "targets": [
+        ["name=vz", "name"],
+        ["css=td:nth-child(3) > .in4char:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='vz']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td/table/tbody/tr[3]/td[3]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[3]/input", "xpath:position"]
+      ],
+      "value": "7"
+    }, {
+      "id": "a179120d-74fa-4cd5-ad73-e63fec8ae668",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(5) input",
+      "targets": [
+        ["css=tr:nth-child(5) input", "css:finder"],
+        ["xpath=//input[@value='Calculate']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td/table/tbody/tr[5]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[5]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "87808c60-73b6-4bb7-81fc-d66eb1ec5418",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=td > h3",
+      "targets": [],
+      "value": "Right Scalene Triangle"
+    }]
+  }, {
+    "id": "7c62689f-c925-4754-acf9-21d6fe03f866",
+    "name": "Big numbers",
+    "commands": [{
+      "id": "dfbfa30a-4e55-422a-a685-b88e7da7308d",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.calculator.net/triangle-calculator.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5635b932-636d-49f9-96b5-e9c6960fdff1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "745b6c06-e0b5-4e51-a195-0422ebd830cb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.clearbtn",
+      "targets": [
+        ["css=.clearbtn", "css:finder"],
+        ["xpath=//img[@onclick='clearForm(document.calform);']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td/table/tbody/tr[5]/td/img", "xpath:idRelative"],
+        ["xpath=//td/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c54876f-01b1-4099-a911-ea08cf243259",
+      "comment": "",
+      "command": "click",
+      "target": "name=vc",
+      "targets": [
+        ["name=vc", "name"],
+        ["css=tr:nth-child(1) > td > .inui1c", "css:finder"],
+        ["xpath=//input[@name='vc']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td/table/tbody/tr/td/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "526de001-35c3-46e9-9805-16fdcc2d4ee2",
+      "comment": "",
+      "command": "type",
+      "target": "name=vc",
+      "targets": [
+        ["name=vc", "name"],
+        ["css=tr:nth-child(1) > td > .inui1c", "css:finder"],
+        ["xpath=//input[@name='vc']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td/table/tbody/tr/td/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "180"
+    }, {
+      "id": "822b8a56-9a09-4275-9635-9432f4db0e80",
+      "comment": "",
+      "command": "click",
+      "target": "name=vy",
+      "targets": [
+        ["name=vy", "name"],
+        ["css=td:nth-child(3) > .in4char:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='vy']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td/table/tbody/tr[2]/td[3]/input", "xpath:idRelative"],
+        ["xpath=//td[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4964bc83-8ee7-4396-ae38-b19da99c5e47",
+      "comment": "",
+      "command": "type",
+      "target": "name=vy",
+      "targets": [
+        ["name=vy", "name"],
+        ["css=td:nth-child(3) > .in4char:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='vy']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td/table/tbody/tr[2]/td[3]/input", "xpath:idRelative"],
+        ["xpath=//td[3]/input", "xpath:position"]
+      ],
+      "value": "9"
+    }, {
+      "id": "7c1a796b-cb32-45a0-bcf5-5ef8e4f1be0b",
+      "comment": "",
+      "command": "click",
+      "target": "name=vz",
+      "targets": [
+        ["name=vz", "name"],
+        ["css=td:nth-child(3) > .in4char:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='vz']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td/table/tbody/tr[3]/td[3]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f6eba9b-ec2a-4d8b-aa9b-282766323dc4",
+      "comment": "",
+      "command": "type",
+      "target": "name=vz",
+      "targets": [
+        ["name=vz", "name"],
+        ["css=td:nth-child(3) > .in4char:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='vz']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td/table/tbody/tr[3]/td[3]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[3]/input", "xpath:position"]
+      ],
+      "value": "8"
+    }, {
+      "id": "4651e730-429c-4213-a9f7-c2a2fd0454e7",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(5) input",
+      "targets": [
+        ["css=tr:nth-child(5) input", "css:finder"],
+        ["xpath=//input[@value='Calculate']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td/table/tbody/tr[5]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[5]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "42d77e66-5152-4a61-a87d-8d65c3e94632",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=font",
+      "targets": [],
+      "value": "Angle \"c\" too big."
+    }]
+  }, {
+    "id": "dae2972d-35d4-40c0-958d-31512aff5299",
+    "name": "Triangle conditions not met",
+    "commands": [{
+      "id": "7950e659-39ca-40ed-a603-a0387b0b03f0",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.calculator.net/triangle-calculator.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "292eafba-44b7-4185-8ddb-b38a0b47838b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b3e7ffed-4006-4677-95e2-a11a26871f2a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.clearbtn",
+      "targets": [
+        ["css=.clearbtn", "css:finder"],
+        ["xpath=//img[@onclick='clearForm(document.calform);']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td/table/tbody/tr[5]/td/img", "xpath:idRelative"],
+        ["xpath=//td/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a569ead6-93a3-446a-b8b4-25ed4a98961c",
+      "comment": "",
+      "command": "click",
+      "target": "name=vx",
+      "targets": [
+        ["name=vx", "name"],
+        ["css=tr:nth-child(2) > td:nth-child(1) > .in4char", "css:finder"],
+        ["xpath=//input[@name='vx']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td/table/tbody/tr[2]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9957f791-721c-42bc-abb3-dd5e528bfa48",
+      "comment": "",
+      "command": "type",
+      "target": "name=vx",
+      "targets": [
+        ["name=vx", "name"],
+        ["css=tr:nth-child(2) > td:nth-child(1) > .in4char", "css:finder"],
+        ["xpath=//input[@name='vx']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td/table/tbody/tr[2]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td/input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "bddb33f7-89e3-44e9-ac8a-861a389f9a5b",
+      "comment": "",
+      "command": "click",
+      "target": "name=vy",
+      "targets": [
+        ["name=vy", "name"],
+        ["css=td:nth-child(3) > .in4char:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='vy']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td/table/tbody/tr[2]/td[3]/input", "xpath:idRelative"],
+        ["xpath=//td[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "549c9ce0-6da2-43be-b7e2-22226b24bd77",
+      "comment": "",
+      "command": "type",
+      "target": "name=vy",
+      "targets": [
+        ["name=vy", "name"],
+        ["css=td:nth-child(3) > .in4char:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='vy']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td/table/tbody/tr[2]/td[3]/input", "xpath:idRelative"],
+        ["xpath=//td[3]/input", "xpath:position"]
+      ],
+      "value": "2"
+    }, {
+      "id": "e0e08dac-4d76-4c1d-8b11-6f04d303fee0",
+      "comment": "",
+      "command": "click",
+      "target": "name=vz",
+      "targets": [
+        ["name=vz", "name"],
+        ["css=td:nth-child(3) > .in4char:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='vz']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td/table/tbody/tr[3]/td[3]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "11fbc393-606a-4504-b363-37b5955bc735",
+      "comment": "",
+      "command": "type",
+      "target": "name=vz",
+      "targets": [
+        ["name=vz", "name"],
+        ["css=td:nth-child(3) > .in4char:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='vz']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td/table/tbody/tr[3]/td[3]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[3]/input", "xpath:position"]
+      ],
+      "value": "4"
+    }, {
+      "id": "ca0fa4ca-0b49-42c6-bd1e-6a2ac5538adf",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(5) input",
+      "targets": [
+        ["css=tr:nth-child(5) input", "css:finder"],
+        ["xpath=//input[@value='Calculate']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td/table/tbody/tr[5]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[5]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "144833c9-cfc5-4492-8768-a97446e1bd14",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=font",
+      "targets": [],
+      "value": "The sum of two sides must be larger than the third."
+    }]
+  }, {
+    "id": "b112b69b-9334-4600-a473-b0ca5b1bb9b9",
+    "name": "All fields are empty",
+    "commands": [{
+      "id": "72943864-2bbc-48e5-a5a2-8b4a9f4c911b",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.calculator.net/triangle-calculator.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b34e71fa-3e77-4164-8f2e-ec284e58ee26",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f1fcb875-234d-426d-85ba-99b0170155de",
+      "comment": "",
+      "command": "click",
+      "target": "css=.clearbtn",
+      "targets": [
+        ["css=.clearbtn", "css:finder"],
+        ["xpath=//img[@onclick='clearForm(document.calform);']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td/table/tbody/tr[5]/td/img", "xpath:idRelative"],
+        ["xpath=//td/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dfa8cb9b-7378-499f-bf53-8ff2e2e82ff8",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(5) input",
+      "targets": [
+        ["css=tr:nth-child(5) input", "css:finder"],
+        ["xpath=//input[@value='Calculate']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td/table/tbody/tr[5]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[5]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f7b19e40-7e08-491c-b1a1-f7dd5ee117e9",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=font",
+      "targets": [],
+      "value": "Please provide 3 positive values, including at least one side."
+    }]
+  }],
+  "suites": [{
+    "id": "26545dab-ae34-4bb0-a5c8-bc52644bd937",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a621b811-123e-4940-8eb9-49e39ddfb8a6"]
+  }],
+  "urls": ["https://www.calculator.net/triangle-calculator.html"],
+  "plugins": []
+}
