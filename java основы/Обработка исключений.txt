@@ -1,0 +1,65 @@
+import java.util.Scanner;
+
+class OutOfRangeException extends Exception {
+  OutOfRangeException(String s) {
+    super(s);
+  }
+}
+
+class InvalidInputException extends Exception {
+  InvalidInputException(String s) {
+    super(s);
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+    int a, b;
+    int[] numbers = new int[10];
+
+    try {
+      System.out.print("Enter a: ");
+      if (!input.hasNextInt()) {
+        throw new InvalidInputException("Invalid input: a should be a number");
+      }
+      a = input.nextInt();
+      if (a <= 0) {
+        throw new OutOfRangeException("a should be greater than 0");
+      }
+
+      System.out.print("Enter b: ");
+      if (!input.hasNextInt()) {
+        throw new InvalidInputException("Invalid input: b should be a number");
+      }
+      b = input.nextInt();
+      if (b <= a) {
+        throw new OutOfRangeException("b should be greater than a");
+      }
+
+      System.out.println("Enter 10 numbers: ");
+      for (int i = 0; i < 10; i++) {
+        if (!input.hasNextInt()) {
+          throw new InvalidInputException("Invalid input: entered value is not a number");
+        }
+        numbers[i] = input.nextInt();
+      }
+
+      int min = Integer.MAX_VALUE;
+      int max = Integer.MIN_VALUE;
+      for (int num : numbers) {
+        if (num >= a && num <= b) {
+          min = Math.min(min, num);
+          max = Math.max(max, num);
+        }
+      }
+
+      System.out.println("Min: " + min);
+      System.out.println("Max: " + max);
+    } catch (InvalidInputException e) {
+      System.out.println("Error: " + e.getMessage());
+    } catch (OutOfRangeException e) {
+      System.out.println("Error: " + e.getMessage());
+    }
+  }
+}
