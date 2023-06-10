@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+<title>тестирование входа по логину и паролю.</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3" data-tags="">Untitled Test Case</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://2droida.ru/<datalist><option>https://2droida.ru/</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Томск: +7 (905) 99-22-000'])[1]/following::span[6]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Томск: +7 (905) 99-22-000'])[1]/following::span[6]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Сравнение'])[1]/preceding::span[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Избранное'])[1]/preceding::span[6]</option><option>xpath=//*/text()[normalize-space(.)='Профиль']/parent::*</option><option>xpath=//a/span[2]</option><option>css=span.header__control-text</option></datalist></td><td></td></tr>
+<tr><td>click</td><td>id=email<datalist><option>id=email</option><option>name=email</option><option>xpath=//input[@id='email']</option><option>xpath=//div/input</option><option>css=#email</option></datalist></td><td></td></tr>
+<tr><td>type</td><td>id=email<datalist><option>id=email</option><option>name=email</option><option>xpath=//input[@id='email']</option><option>xpath=//div/input</option><option>css=#email</option></datalist></td><td>ixi1234@ya.ru</td></tr>
+<tr><td>type</td><td>id=password<datalist><option>id=password</option><option>name=password</option><option>xpath=//input[@id='password']</option><option>xpath=//div[2]/div/input</option><option>css=#password</option></datalist></td><td>123456789</td></tr>
+<tr><td>click</td><td>name=commit<datalist><option>name=commit</option><option>xpath=//button[@name='commit']</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Пароль'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Телефон или Email'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Восстановить пароль'])[1]/preceding::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Зарегистрироваться'])[1]/preceding::button[1]</option><option>xpath=//*/text()[normalize-space(.)='Войти']/parent::*</option><option>xpath=//div[3]/button</option><option>css=button[name="commit"]</option></datalist></td><td></td></tr>
+</tbody></table>
+</body>
+</html>
