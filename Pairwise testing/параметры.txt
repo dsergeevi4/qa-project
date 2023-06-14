@@ -1,0 +1,14 @@
+параметры:
+1) Брэнд Xiaomi, Redmi
+2) цены от 7499 до 79999
+3) Память 2/32, 3/64, 4/64, 6/64, 4/128, 6/128, 8/128, 6/256 , 8/256, 12/256, 12/512
+4) Экран IPS, AMOLED, Super AMOLED
+5) Модель Note 11 pro, Poco F4 GT, Poco M3 Pro 5G, Poco M4 Pro 5G , Poco X4 Pro 5G , Redmi 10 (2022) , Redmi 10С , Redmi 9A , Redmi 9C (NFC) , Redmi Note 10 5G , Redmi Note 10S, Redmi Note 11 , Redmi Note 11 Pro + 5G , Redmi Note 11S, Redmi Note 11S 5G, Redmi Note 9 (NFC), Xiaomi 11T Pro, Xiaomi 12 5G, Xiaomi 12 Lite NFC, Xiaomi 12 Pro, Xiaomi Black Shark 4, Xiaomi Mi 11 Lite, Xiaomi Mi 11 Ultra, Xiaomi Mi Mix Fold, Xiaomi Poco M4 Pro 4G, Xiaomi Redmi 10 2022, Xiaomi Redmi 10A, Xiaomi Redmi Note 10 Pro 
+
+класс эквивалентности цены:
+1 класс: 7499,1 , 7499.1
+2 класс: 79999, 7499
+
+
+Для данных параметров в итоге получаем 308 тест-кейсов
+
